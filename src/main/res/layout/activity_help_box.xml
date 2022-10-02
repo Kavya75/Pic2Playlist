@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#367C7C7C"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/how_to_use"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="34dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginRight="100dp"
+                android:fontFamily="@font/quicksand"
+                android:gravity="center_horizontal"
+                android:text="How to Use Pic2Playlist?"
+                android:textColor="#92B5B8"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/intro"
+                android:layout_width="314dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/how_to_use"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/quicksand"
+                android:gravity="center_horizontal"
+                android:text="Pic2Playlist is an app where you can transfer your playlist from Amazon, Spotify, Apple Music, or even Billboard, to different streaming services."
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/step1"
+                android:layout_width="314dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/intro"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/quicksand"
+                android:gravity="center_horizontal"
+                android:text="1. Take screenshots of all the songs in your playlist."
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/firstImage"
+                android:layout_width="226dp"
+                android:layout_height="344dp"
+                android:layout_below="@+id/step1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/original"/>
+<!--                app:srcCompat="@drawable/original" />-->
+
+            <TextView
+                android:id="@+id/step2"
+                android:layout_width="314dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/quicksand"
+                android:gravity="center_horizontal"
+                android:text="2. Crop the pictures to leave out as many unnecessary characters as possible."
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/secondImage"
+                android:layout_width="220dp"
+                android:layout_height="363dp"
+                android:layout_below="@+id/step2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/cropped"/>
+
+            <TextView
+                android:id="@+id/step3"
+                android:layout_width="314dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/secondImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/quicksand"
+                android:gravity="center_horizontal"
+                android:text="3. Make sure the title and artist (and album, if present) are in the picture."
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/step4"
+                android:layout_width="314dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/step3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/quicksand"
+                android:gravity="center_horizontal"
+                android:text="4. Import your photos by clicking on the 'IMPORT PHOTOS' button. The limit for number of photos is 5 per import session."
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/step5"
+                android:layout_width="314dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/step4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/quicksand"
+                android:gravity="center_horizontal"
+                android:text="5. After importing your photos, select which service your playlist is from."
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/step6"
+                android:layout_width="314dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/step5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/quicksand"
+                android:gravity="center_horizontal"
+                android:text="6. After processing is over, you will be able to edit the tracks that were taken from your pictures."
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/step7"
+                android:layout_width="314dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/step6"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/quicksand"
+                android:gravity="center_horizontal"
+                android:text="7. Select where you want to move your playlist, log in to your account, and enjoy!"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/disclaimer"
+                android:layout_width="314dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/step7"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/quicksand"
+                android:gravity="center_horizontal"
+                android:text="DISCLAIMER: If you import Spotify playlist pictures from an Android phone, the success rate for Spotify to Apple is lower than the success rate for other streaming services to Apple if your pictures. If you import Spotify playlist pictures from an iOS phone, the success rate will be higher."
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/ok_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/disclaimer"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/radius"
+                android:fontFamily="@font/quicksand"
+                android:text="@android:string/ok" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

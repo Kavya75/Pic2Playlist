@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/final_background">
+
+    <TextView
+        android:id="@+id/success_failure_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/track_textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="175dp"
+        android:fontFamily="@font/quicksand"
+        android:text="Processing"
+        android:textAlignment="center"
+        android:textColor="#7AA5AA"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/go_home"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/success_failure_textview"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/radius"
+        android:fontFamily="@font/quicksand"
+        android:text="return to home screen"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="15dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

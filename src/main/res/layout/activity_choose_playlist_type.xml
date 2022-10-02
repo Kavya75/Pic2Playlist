@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/final_back_border">
+
+    <TextView
+        android:id="@+id/source_text_view"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:text="where are these images from?"
+        android:textColor="#7AA5AA"
+        android:textSize="24dp"
+        app:fontFamily="@font/quicksand" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="294dp"
+        android:layout_height="163dp"
+        android:layout_below="@id/source_text_view"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/spotify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand"
+            android:onClick="onRadioButtonClicked"
+            android:text="Spotify"
+            android:textSize="20dp"
+            android:buttonTint="#766c7f"/>
+
+        <RadioButton
+            android:id="@+id/amazon_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand"
+            android:onClick="onRadioButtonClicked"
+            android:text="Amazon Music"
+            android:textSize="20dp"
+            android:buttonTint="#766c7f"/>
+
+        <RadioButton
+            android:id="@+id/billboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/quicksand"
+            android:onClick="onRadioButtonClicked"
+            android:text="Billboard"
+            android:textSize="20dp"
+            android:buttonTint="#766c7f"/>
+
+        <RadioButton
+            android:id="@+id/apple_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand"
+            android:onClick="onRadioButtonClicked"
+            android:text="Apple Music"
+            android:textSize="20dp"
+            android:buttonTint="#766c7f"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="66dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/radio_group"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/radius"
+        android:fontFamily="@font/quicksand"
+        android:text="next"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="20dp" />
+
+</RelativeLayout>

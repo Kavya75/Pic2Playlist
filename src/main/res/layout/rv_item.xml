@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/track_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/quicksand"
+                android:text="Track: "
+                android:textColor="#766C7F"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/track_edittext"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/album_edittext"
+                android:layout_toRightOf="@+id/track_textview"
+                android:fontFamily="@font/quicksand"
+                android:textSize="15sp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:id="@+id/artist_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/track_textview"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="19dp"
+                android:fontFamily="@font/quicksand"
+                android:text="Artist: "
+                android:textColor="#766C7F"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/artist_edittext"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/track_edittext"
+                android:layout_alignLeft="@+id/album_edittext"
+                android:layout_toRightOf="@+id/artist_textview"
+                android:fontFamily="@font/quicksand"
+                android:textSize="15sp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:id="@+id/album_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/artist_textview"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/quicksand"
+                android:text="Album: "
+                android:textColor="#766C7F"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/album_edittext"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/artist_edittext"
+                android:layout_toRightOf="@+id/album_textview"
+                android:textSize="15sp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+<!--    <Button-->
+<!--        android:id="@+id/next_button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom|center"-->
+<!--        android:layout_margin="@dimen/fab_margin"-->
+<!--        android:text="Next"-->
+<!--        app:backgroundTint="#a9d2d5"-->
+<!--        android:fontFamily="@font/quicksand"></Button>-->
+
+</RelativeLayout>
